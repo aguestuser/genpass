@@ -19,8 +19,13 @@ object Main extends App {
 
   { 1 until 20 } map { _ => chars((Math.random * chars.size).toInt) } mkString
 
-//  println(hexify(hash(seed)))
-//  def seed : String = new Date().toString + Math.random().toString
-//  def hash(s: String): Array[Byte] = java.security.MessageDigest.getInstance("SHA-256").digest(s.getBytes)
-//  def hexify(bs: Array[Byte]): String = bs.map(b => (b & 0xff).toHexString).mkString
+  // TODO riff on the below
+  //
+  // though much more unique, doens't feel quite as "random" b/c spits out hex string,
+  // which only contains characters from 0-F
+  //
+  //  println(hexify(hash(seed)))
+  //  def seed : String = new Date().toString + Math.random().toString
+  //  def hash(s: String): Array[Byte] = java.security.MessageDigest.getInstance("SHA-256").digest(s.getBytes)
+  //  def hexify(bs: Array[Byte]): String = bs.map(b => (b & 0xff).toHexString).mkString
 }
